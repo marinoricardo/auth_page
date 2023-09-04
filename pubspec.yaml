@@ -1,6 +1,6 @@
 name: auth_page
 description: Pacote que disponibiliza telas para autenticacao
-version: 1.0.1
+version: 1.0.3
 homepage: https://github.com/marinoricardo/auth_page
 
 environment:

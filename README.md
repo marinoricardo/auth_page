@@ -1,4 +1,4 @@
-# auth_page 1.0.1
+# auth_page 1.0.3
 
 O pacote `auth_page` fornece telas para autenticação em aplicativos Flutter, simplificando a criação de uma página de login personalizável.
 
@@ -8,7 +8,7 @@ No seu arquivo `pubspec.yaml`, adicione o `auth_page` na versão desejada:
 
 ```yaml
 dependencies:
-  auth_page: ^1.0.1
+  auth_page: ^1.0.3
 ```
 
 Em seguida, execute `flutter pub get` para instalar o pacote.
