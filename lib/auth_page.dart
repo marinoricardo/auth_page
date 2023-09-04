@@ -1,3 +1,3 @@
 library auth_page;
 
-export 'LoginPage.dart';
+export 'login_page.dart';
