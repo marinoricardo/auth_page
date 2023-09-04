@@ -1,39 +1,83 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+```markdown
+# auth_page 1.0.1
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+O pacote `auth_page` fornece telas para autenticação em aplicativos Flutter, simplificando a criação de uma página de login personalizável.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Instalação
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+No seu arquivo `pubspec.yaml`, adicione o `auth_page` na versão desejada:
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  auth_page: ^1.0.1
 ```
 
-## Additional information
+Em seguida, execute `flutter pub get` para instalar o pacote.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Uso
+
+Para usar o pacote `auth_page`, siga estas etapas:
+
+1. Importe o pacote `auth_page` no seu arquivo Dart:
+
+```dart
+import 'package:auth_page/auth_page.dart';
+```
+
+2. Crie uma instância da classe `LoginPage`, passando os parâmetros necessários:
+
+```dart
+LoginPage(
+  icon: Icons.lock, // Ícone para a tela de login
+  backgroundColor: Colors.white, // Cor de fundo da tela de login
+  buttonBackgroundColor: Colors.blue, // Cor de fundo do botão de login
+)
+```
+
+3. Adicione a instância da classe `LoginPage` à sua árvore de widgets.
+
+Aqui está um exemplo completo:
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:auth_page/auth_page.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Minha App de Autenticação'),
+        ),
+        body: LoginPage(
+          icon: Icons.lock,
+          backgroundColor: Colors.white,
+          buttonBackgroundColor: Colors.blue,
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+## Contribuições
+
+Se você gostaria de contribuir para este pacote, fique à vontade para abrir uma issue ou enviar um pull request. Estamos sempre abertos a melhorias!
+
+## Licença
+
+Este pacote está sob a sua licença aqui. Consulte o arquivo `LICENSE` para obter mais detalhes.
+
+## Contato
+
+Se você tiver alguma dúvida ou precisar de assistência, entre em contato com Marino Ricardo em geral@marinoricardo.com.
+
+---
+
+Sinta-se à vontade para personalizar ainda mais o README e fornecer mais detalhes conforme necessário. Este é apenas um exemplo básico com as informações que você forneceu.
