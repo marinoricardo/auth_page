@@ -1,4 +1,3 @@
-```markdown
 # auth_page 1.0.1
 
 O pacote `auth_page` fornece telas para autenticação em aplicativos Flutter, simplificando a criação de uma página de login personalizável.
