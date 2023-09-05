@@ -28,7 +28,7 @@ import 'package:auth_page/auth_page.dart';
 ```dart
 LoginPage(
   icon: Icons.lock, // Ícone para a tela de login
-  backgroundColor: Colors.white, // Cor de fundo da tela de login
+  backgroundColor: Colors.blue, // Cor de fundo da tela de login
   buttonBackgroundColor: Colors.blue, // Cor de fundo do botão de login
 )
 ```
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
         ),
         body: LoginPage(
           icon: Icons.lock,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.blue,
           buttonBackgroundColor: Colors.blue,
         ),
       ),
